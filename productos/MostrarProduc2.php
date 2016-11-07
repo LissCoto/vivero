@@ -123,6 +123,7 @@
               $descripcion=$fila['Descripcion'];
 
                 echo'<h5>"'.$fila['Nombre'].'"</h5>
+		<p>$'.$fila['Precio'].'</p>
                 <p>'.$fila['Descripcion'].'</p>';
 				
 				if($_SESSION['permisos']['Productos']['Modificar'] === '1')
